@@ -1,2 +1,5 @@
 # Auto detect text files and perform LF normalization
-static/* linguist-vendored
+games/* linguist-vendored
+interfaces/* linguist-vendored
+login_registration/* linguist-vendored
+messager/* linguist-vendored
