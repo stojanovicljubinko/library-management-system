@@ -18,4 +18,8 @@ jobs:
         distribution: 'adopt'
         architecture: x64
     - name: Build with Ant
-      run: ant -noinput -buildfile build.xml
+    - run: ant -noinput -buildfile build.xml
+    - uses: actions/upload-artifact@v3
+    with:
+      name: Package
+      path: build/jar
