@@ -1,2 +1,2 @@
 *.png linguist-detectable=false
-*.html linguist-detectable=false
+* text=auto
