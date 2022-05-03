@@ -385,6 +385,7 @@ public class Quiz extends javax.swing.JFrame {
 
                 this.currentString = this.currentString.replace("<html><body><p>", "").replace("</p></body></html>", "");
                 if (this.keyString.equals(this.currentString)) {
+                    //quiz fix
                     this.answersNumber_L.setText(String.valueOf(++this.correctQuestions));
                     buttonGroup1.clearSelection();
                 }
