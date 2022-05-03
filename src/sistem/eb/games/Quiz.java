@@ -383,6 +383,7 @@ public class Quiz extends javax.swing.JFrame {
             if (buttonGroup1.isSelected(tekst1_RB.getModel()) || buttonGroup1.isSelected(tekst2_RB.getModel()) || buttonGroup1.isSelected(tekst3_RB.getModel()) || buttonGroup1.isSelected(tekst4_RB.getModel())) {
                 butt = getSelected(this.tekst1_RB, this.tekst2_RB, this.tekst3_RB, this.tekst4_RB);
 
+                this.currentString = this.currentString.replace("<html><body><p>", "").replace("</p></body></html>", "");
                 if (this.keyString.equals(this.currentString)) {
                     this.answersNumber_L.setText(String.valueOf(++this.correctQuestions));
                     buttonGroup1.clearSelection();
@@ -394,6 +395,7 @@ public class Quiz extends javax.swing.JFrame {
                 }
             } else {
                 new sistem.eb.login_registration.DialogMessage("Obaveštenje", "Neophodno uneti odgovor!", "U redu").show();
+                return;
             }
             this.brojPitanja_TF.setText(String.valueOf(++this.questionNumber));
             this.nuberofquestion_L.setText("Pitanje  " + String.valueOf(this.questionNumber) + "  od  " + sistem.eb.interfaces.InterfaceAdministrator.getCountRows("QUIZDATA"));
