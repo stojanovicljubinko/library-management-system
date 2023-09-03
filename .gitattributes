@@ -2,3 +2,5 @@
 *.jpg linguist-detectable=false
 *.txt linguist-detectable=false
 *.html linguist-detectable=false
+*.properties linguist-detectable=false
+*.bat linguist-detectable=false
