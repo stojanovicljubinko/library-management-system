@@ -2,3 +2,13 @@
 *.jpg linguist-detectable=false
 *.txt linguist-detectable=false
 *.html linguist-detectable=false
+
+/.bundle/ linguist-detectable=false
+/.yardoc linguist-detectable=false
+/_yardoc/ linguist-detectable=false
+/coverage/ linguist-detectable=false
+/doc/ linguist-detectable=false
+/pkg/ linguist-detectable=false
+/spec/reports/ linguist-detectable=false
+/tmp/ linguist-detectable=false
+Gemfile.lock linguist-detectable=false
